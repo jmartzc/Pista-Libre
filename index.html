@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pista Libre - Alquila el coche de tus sueños</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="nav-logo">
+        <h1>PISTA LIBRE</h1>
+      </div>
+      <div class="nav-links">
+        <a href="#inicio" onclick="seleccionar()">Inicio</a>
+        <a href="#nosotros" onclick="seleccionar()">Nosotros</a>
+        <a href="#coches" onclick="seleccionar()">Nuestros Coches</a>
+        <a href="#contacto" onclick="seleccionar()">Contacto</a>
+      </div>
+    </header>
+
+    <section class="hero" id="inicio">
+      <video autoplay muted loop id="video-background">
+        <source src="assets/vid/herovid.mp4" type="video/mp4" />
+        Tu navegador no soporta la etiqueta de video.
+      </video>
+      <div class="hero-info">
+        <h2>Encuentra el coche perfecto para tu próxima aventura.</h2>
+        <div class="hero-btn">
+          <h3><a href="#coches">Conducir ahora</a></h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="nosotros" id="nosotros">
+      <div class="nosotros-container">
+        <h2 class="section-title">Sobre Nosotros</h2>
+        <div class="nosotros-items">
+          <div class="nosotros-item">
+            <i class="fa-solid fa-car"></i>
+            <h3>Flota Exclusiva</h3>
+            <p>
+              Contamos con una selección exclusiva de vehículos, desde modelos
+              de lujo hasta deportivos de alta gama, para adaptarnos a tus
+              preferencias y necesidades.
+            </p>
+          </div>
+          <div class="nosotros-item">
+            <i class="fa-solid fa-shield-alt"></i>
+            <h3>Seguridad Garantizada</h3>
+            <p>
+              Nos aseguramos de que todos nuestros vehículos sean revisados
+              exhaustivamente para garantizar tu tranquilidad y una experiencia
+              de conducción segura.
+            </p>
+          </div>
+          <div class="nosotros-item">
+            <i class="fa-solid fa-star"></i>
+            <h3>Atención Personalizada</h3>
+            <p>
+              Nuestro equipo de profesionales está comprometido a ofrecerte un
+              servicio excepcional, asegurando que cada detalle se ajuste a tus
+              expectativas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="coches" id="coches">
+      <div class="coches-container">
+        <h2 class="section-title">Nuestros Coches</h2>
+        <div class="coches-cards">
+          <!-- Card 1 -->
+          <div class="card">
+            <img
+              src="assets/img/purosangue.webp"
+              alt="Ferrari Purosangue"
+              class="card-img"
+            />
+            <div class="card-info">
+              <h3 class="card-title">Ferrari Purosangue</h3>
+              <p class="card-price">Desde 2000 € al día</p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card">
+            <img
+              src="assets/img/lambo-urus.webp"
+              alt="Lamborghini Urus Performante"
+              class="card-img"
+            />
+            <div class="card-info">
+              <h3 class="card-title">Lamborghini Urus Performante</h3>
+              <p class="card-price">Desde 1800 € al día</p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card">
+            <img
+              src="assets/img/720s.webp"
+              alt="McLaren 720s Spider"
+              class="card-img"
+            />
+            <div class="card-info">
+              <h3 class="card-title">McLaren 720s Spider</h3>
+              <p class="card-price">Desde 2100 € al día</p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="card">
+            <img
+              src="assets/img/claseg.webp"
+              alt="Ferrari Purosangue"
+              class="card-img"
+            />
+            <div class="card-info">
+              <h3 class="card-title">Mercedes G63 AMG</h3>
+              <p class="card-price">Desde 1500 € al día</p>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="card">
+            <img
+              src="assets/img/audirs6.webp"
+              alt="Audi RS6"
+              class="card-img"
+            />
+            <div class="card-info">
+              <h3 class="card-title">Audi RS6</h3>
+              <p class="card-price">Desde 1500 € al día</p>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="card">
+            <img
+              src="assets/img/astonmartinvantage.webp"
+              alt="Aston Martin Vantage F1 Edition"
+              class="card-img"
+            />
+            <div class="card-info">
+              <h3 class="card-title">Aston Martin Vantage F1 Edition</h3>
+              <p class="card-price">Desde 1700 € al día</p>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="card">
+            <img
+              src="assets/img/e63amg.webp"
+              alt="Mercedes-Benz E63 AMG"
+              class="card-img"
+            />
+            <div class="card-info">
+              <h3 class="card-title">Mercedes-Benz E63 AMG</h3>
+              <p class="card-price">Desde 1400 € al día</p>
+            </div>
+          </div>
+
+          <!-- Card 8 -->
+          <div class="card">
+            <img src="assets/img/bmw750.webp" alt="BMW 750e" class="card-img" />
+            <div class="card-info">
+              <h3 class="card-title">BMW 750e</h3>
+              <p class="card-price">Desde 1400 € al día</p>
+            </div>
+          </div>
+
+          <!-- Card 9 -->
+          <div class="card">
+            <img
+              src="assets/img/macangts.webp"
+              alt="Porsche Macan GTS"
+              class="card-img"
+            />
+            <div class="card-info">
+              <h3 class="card-title">Porsche Macan GTS</h3>
+              <p class="card-price">Desde 1300 € al día</p>
+            </div>
+          </div>
+
+          <!-- Card 10 -->
+          <div class="card">
+            <img
+              src="assets/img/audirs3.webp"
+              alt="Audi RS3"
+              class="card-img"
+            />
+            <div class="card-info">
+              <h3 class="card-title">Audi RS3</h3>
+              <p class="card-price">Desde 1400 € al día</p>
+            </div>
+          </div>
+
+          <!-- Card 11 -->
+          <div class="card">
+            <img
+              src="assets/img/landrover.webp"
+              alt="Land Rover Range Rover SV"
+              class="card-img"
+            />
+            <div class="card-info">
+              <h3 class="card-title">Land Rover Range Rover SV</h3>
+              <p class="card-price">Desde 1999 € al día</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+      <div class="contacto-container">
+        <h2 class="section-title">Contacto</h2>
+        <div class="contacto-contenido">
+          <div class="contacto-info">
+            <h3>¿Tienes alguna pregunta?</h3>
+            <p>
+              Contacta con nosotros a través del formulario o utilizando
+              nuestros datos de contacto.
+            </p>
+            <ul>
+              <li>
+                <i class="fa-solid fa-phone"></i
+                ><span>Teléfono: +34 123 456 789</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i
+                ><span>Email: contacto@pistalibre.com</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-map-marker-alt"></i
+                ><span
+                  >Dirección: Puerto deportivo, 12, 04720 Aguadulce,
+                  Almería</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="contacto-formulario">
+            <form action="#" method="POST">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" required />
+
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+
+              <label for="mensaje">Mensaje</label>
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                rows="4"
+                required
+              ></textarea>
+
+              <button type="submit" class="btn">Enviar</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="contacto-mapa">
+          <h3>Visítanos</h3>
+          <div id="mapa">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2854.2358744162727!2d-2.5613874!3d36.8162584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7071005f11848f%3A0xd5cb5cd0ee48b15a!2sAPARCAMIENTO!5e0!3m2!1ses!2ses!4v1670502937910"
+              width="100%"
+              height="400"
+              style="border: 0; border-radius: 8px"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <p>&copy; 2024 PistaLibre. Todos los derechos reservados.</p>
+        <ul class="footer-social">
+          <li>
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              class="social-icon"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              class="social-icon"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.twitter.com"
+              target="_blank"
+              class="social-icon"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
